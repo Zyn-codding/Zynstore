@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zyn Store</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+      color: white;
+    }
+    .card {
+      background: rgba(0,0,0,0.6);
+      padding: 30px;
+      border-radius: 20px;
+      text-align: center;
+      width: 320px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.7);
+    }
+    .card img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 3px solid #00ff9d;
+    }
+    h1 {
+      margin: 10px 0;
+      font-size: 26px;
+      letter-spacing: 2px;
+    }
+    p {
+      margin: 5px 0 20px;
+      color: #ccc;
+    }
+    .btn {
+      display: inline-block;
+      margin: 8px;
+      padding: 12px 24px;
+      border-radius: 25px;
+      text-decoration: none;
+      font-weight: bold;
+      color: black;
+      background: linear-gradient(45deg, #00c6ff, #00ff9d);
+      transition: 0.3s;
+      cursor: pointer;
+    }
+    .btn:hover {
+      opacity: 0.8;
+    }
+    .footer {
+      margin-top: 15px;
+      font-size: 13px;
+      color: #bbb;
+    }
+    /* Payment box */
+    .payment-box {
+      display: none;
+      margin-top: 20px;
+      text-align: left;
+    }
+    .payment {
+      background: rgba(255,255,255,0.1);
+      padding: 12px;
+      border-radius: 10px;
+      margin: 8px 0;
+    }
+    .payment strong {
+      color: #00c6ff;
+    }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <!-- LOGO -->
+    <img src="https://i.imgur.com/DbcBxgN.jpeg" alt="Logo Zyn Store">
+    
+    <h1>ZYN STORE</h1>
+    <p>Official Shop</p>
+
+    <!-- TOMBOL -->
+    <a href="https://t.me/Zeinvador" class="btn">Telegram</a>
+    <a href="https://whatsapp.com/channel/0029VbBB0ks65yDEBMJATp1A" class="btn">Saluran WhatsApp</a>
+    <div class="btn" onclick="togglePayment()">Payment</div>
+
+    <!-- PAYMENT SECTION -->
+    <div id="paymentBox" class="payment-box">
+      <div class="payment">
+        <strong>Dana:</strong><br>
+        08xxxxxxxxxx
+      </div>
+      <div class="payment">
+        <strong>Gopay:</strong><br>
+        08xxxxxxxxxx
+      </div>
+      <div class="payment">
+        <strong>Shopeepay:</strong><br>
+        08xxxxxxxxxx
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>Doain usaha gua lancar 😉</p>
+      <p>© Zyn Store 2025</p>
+    </div>
+  </div>
+
+  <!-- MUSIK -->
+  <audio autoplay loop hidden>
+    <source src="ssstik.io_1757734180426.mp3" type="audio/mpeg">
+  </audio>
+
+  <script>
+    function togglePayment() {
+      const box = document.getElementById("paymentBox");
+      box.style.display = (box.style.display === "block") ? "none" : "block";
+    }
+  </script>
+</body>
+      </html>
